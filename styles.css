@@ -6,3 +6,30 @@
 body {
     font-family: sans-serif; /* шрифт */
 }
+
+/* Сделать всю основу посередине */
+.main-content {
+    width: 500px; /* ширина */
+    position: absolute; /* оторвать со статики, чтобы оно было поверх */
+    top: 50%; /* местоположение контента */
+    left: 50%; /* местоположение контента */
+    transform: translateX(-50%) translateY(-50%);   /* передвигает */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);  /* тень */
+    
+}
+
+/* Сам текстовый редактор */
+.text-editor-header {
+    background-color: #ecf0f1; /* цвет задника(заднего фона)  */
+    padding: 5px; /* у сторон отступы 5 пикселей */
+
+}
+
+
+/* Даём стили кнопкам тект.редактора */
+.text-editor-header .btn {
+    border: none; /* Долой границы элемента */
+    outline: none; /* аналогично почти */
+    background-color: transparent; /* прозрачный фон */
+    margin-right: 5px; /* внешний отступ вправо */
+}
