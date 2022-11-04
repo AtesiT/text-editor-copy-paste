@@ -32,4 +32,13 @@ body {
     outline: none; /* аналогично почти */
     background-color: transparent; /* прозрачный фон */
     margin-right: 5px; /* внешний отступ вправо */
+    cursor: pointer;    /* чтобы менялся курсор */
+}
+
+/* Содержимое */
+.content {
+    min-height: 200px;  /* изначально строка - минимум 200 пикселей */
+    border: 1px solid #ecf0f1;  /* добавление границы */
+    border-top: 0px;  /* убираем границу сверху */
+    padding: 20px;    /* внутренний отступ */
 }
