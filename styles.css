@@ -5,6 +5,7 @@
 
 body {
     font-family: sans-serif; /* шрифт */
+    background-color: rgb(50, 50, 50);
 }
 
 /* Сделать всю основу посередине */
@@ -14,13 +15,13 @@ body {
     top: 50%; /* местоположение контента */
     left: 50%; /* местоположение контента */
     transform: translateX(-50%) translateY(-50%);   /* передвигает */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);  /* тень */
+    box-shadow: 0 50px 100px rgba(255, 0, 0, 0.19);  /* тень */
     
 }
 
 /* Сам текстовый редактор */
 .text-editor-header {
-    background-color: #ecf0f1; /* цвет задника(заднего фона)  */
+    background-color: #ff7070; /* цвет задника(заднего фона)  */
     padding: 5px; /* у сторон отступы 5 пикселей */
 
 }
@@ -30,7 +31,7 @@ body {
 .text-editor-header .btn {
     border: none; /* Долой границы элемента */
     outline: none; /* аналогично почти */
-    background-color: transparent; /* прозрачный фон */
+    background-color: #ff7070; /* прозрачный фон */
     margin-right: 5px; /* внешний отступ вправо */
     cursor: pointer;    /* чтобы менялся курсор */
 }
@@ -38,7 +39,8 @@ body {
 /* Содержимое */
 .content {
     min-height: 200px;  /* изначально строка - минимум 200 пикселей */
-    border: 1px solid #ecf0f1;  /* добавление границы */
+    border: 1px solid rgb(50, 50, 50);  /* добавление границы */
     border-top: 0px;  /* убираем границу сверху */
     padding: 20px;    /* внутренний отступ */
+    color: rgb(255, 255, 255);
 }
