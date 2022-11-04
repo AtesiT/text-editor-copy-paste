@@ -21,6 +21,11 @@ elements.forEach(element => {
         // 
         let command = element.dataset['element']
 
-        document.execCommand(command, false, null)
+        if (command == 'createLink' || command == 'insertImage') {
+            let url = prompt('Введите ссылочку:', 'http://')
+            document.execCommand(command, false, url);
+        } else { // если ссылка, срабатывает сверху и просит ввести ссылку, если нет снизу
+            document.execCommand(command, false, null);
+        }      
     });
 })
